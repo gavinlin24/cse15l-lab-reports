@@ -11,7 +11,7 @@ Best Code
 2. 2
 3. 3
 ---
-'inline code'
-'''
+`inline code`
+```
 code block
-'''
+```
