@@ -12,7 +12,7 @@ Best Code
 3. 3
 ---
 
-`inline code` with backticks
+`inline code` 
 
 ```
 #code block
