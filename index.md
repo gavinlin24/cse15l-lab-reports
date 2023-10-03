@@ -3,8 +3,8 @@ Best Code
 **bold**
 # heading 1
 ## heading 2
-[google.com]
-![http://url/a.png]
+[](google.com)
+![](http://url/a.png)
 * 1
 * 2
 * 3
