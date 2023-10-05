@@ -15,7 +15,7 @@
 \
 ## cat command
 ![cat](cat.png)
-1. **No Argument:** The working directory when running the cat command with no argument is in /home. Nothing happens because the terminal waits for the user's keyboard input. There were no errors when running this command.
+1. **No Argument:** The working directory when running the cat command with no argument (just cat) is in /home. Nothing happens because the terminal waits for the user's keyboard input. There were no errors when running this command.
 2. **Directory as Argument:** The working directory when running the cat command with a directory as an argument was /home. When "lecture1" was passed in as an argument, the terminal indicated that "lecture1" was a directory. This might be because when using the cat command is meant to be used on files and not directories. In this case, since "lecture1" is a directory, the terminal reminds you that it is a directory and not a file.
 3. **File as Argument:** The working directory when running the cat command with a file as an argument was /home/lecture1. When passing in "Hello.java" as an argument, the terminal printed out the contents inside "Hello.java". This is because the cat command displays the contents of whichever file name is passed in as an argument. There were no errors when running this command.
 
