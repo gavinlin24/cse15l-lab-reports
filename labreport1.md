@@ -1,6 +1,6 @@
----
-# Lab Report 1
----
+
+# Lab Report 1, 2
+
 ## cd command
 ![cd](cd.png)
 1. **No Argument:** The working directory when running the cd command with no argument is in /home/lecture1. When the cd command is entered with no arguments (only cd), the user is returned to the home directory. There were no errors when running this command.
