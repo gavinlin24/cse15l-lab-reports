@@ -10,3 +10,7 @@ After adding the query to the end of the url, the entire url is passed into the 
 ![second](second.png)
 
 In the second screenshot, the url is passed into "handleRequest" once again, but the value after the equals sign is "second". Since the query is the same as in the first screenshot, "second" is added to the field "stringList" similarly to "first". "printList" is then called and formats the values stored inside "stringList", which now includes both "first" and "second" to display it in the format shown above.  
+
+## Public & Private Keys
+![pub](publickey.png)
+![priv](privatekey.png)
