@@ -1,7 +1,7 @@
 # Lab Report 2
 
 ## String Server Code
-![code](StringServerCode.png)
+![code](SSC.png)
 
 ## Running String Server
 
