@@ -11,6 +11,21 @@ After adding the query to the end of the url, the entire url is passed into the 
 
 In the second screenshot, the url is passed into "handleRequest" once again, but the value after the equals sign is "second". Since the query is the same as in the first screenshot, "second" is added to the field "stringList" similarly to "first". "printList" is then called and formats the values stored inside "stringList", which now includes both "first" and "second" to display it in the format shown above.  
 
-## Public & Private Keys
-![pub](public key.png)
-![priv](private key.png)
+## Public/Private Keys & Login
+
+1. Public Key Screenshot:
+   
+![pub](pubk.png)
+
+2. Private Key Screenshot:
+
+![priv](privk.png)
+
+3. No Password Login Screenshot:
+
+![log](login.png)
+
+## What I Learned
+Aside from the new commands we learned, I learned how to build and run a server using java. With the new knowledge of running a server, I gained a better understanding of how urls are structured, and learned about the many possibilities and projects you might be able to make from utilizing a server and messing with the server's url/queries. 
+
+
