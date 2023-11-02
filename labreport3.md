@@ -46,7 +46,7 @@ static int[] reversed(int[] arr) {
 }
 ```
 
-This fix works because in the previous buggy code, it was iterating through the elements of the empty newArray and storing those elements, 0, into the original array passed in as an argument. The fixed code iterates through the given array and stores in into the new array in reverse order.
+This fix works because in the previous buggy code, it was iterating through the elements of the empty newArray and storing those elements, 0, into the original array passed in as an argument. The fixed code iterates through the given array and stores it into the new array in reverse order.
 
 ## Researching Commands: find
 
