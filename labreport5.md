@@ -3,14 +3,20 @@
 ## Student Question
 I am having trouble compiling TestListExamples. The error message in the terminal says the junit package doesn't exist, so I think there is something wrong when I tried to copy the lib folder into the student-submissions directory.
 
-
+![symptom](symptom.PNG)
+![screenshot](StudentScreenshot.PNG)
 ## TA Response
 What options can be used with the cp command to copy a directory and its contents? 
 
 ## Information Received
+![info](info.PNG)
+![working](working.PNG)
+
+The bug here was not using the -r option after the cp command to copy the lib folder into student-submissions. Since lib is a directory and not a file, using the cp command without -r would not copy the contents inside lib, which contains the junit files needed to compile TestListExamples.
 
 ## Setup Information Needed
-file and directory structure:
+**file and directory structure:**
+![struc](directorystruc.PNG)
 
 **grade.sh**
 ```
@@ -115,5 +121,13 @@ public class TestListExamples {
   }
 }
 ```
-commands to trigger bug:
-fixing the bug:
+**commands to trigger bug:**
+```
+bash grade.sh 
+```
+**fixing the bug:**
+
+In the bash script, for the line where the student tries to copy lib into the student-submissions directory, add the -r option.
+
+## Reflection
+There were many things I learned that I didn't know before, including editing files in vim, using a debugger like jdb, and writing bash scripts to automate processes. I think overall I gained skills that are useful for saving me a lot of time in the future on programming assignments.
