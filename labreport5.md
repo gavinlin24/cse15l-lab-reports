@@ -1,24 +1,30 @@
 # Lab Report 5
 
 ## Student Question
-I am having trouble compiling TestListExamples. The error message in the terminal says the junit package doesn't exist, so I think there is something wrong when I tried to copy the lib folder into the student-submissions directory.
+I am having trouble compiling TestListExamples for my autograder. The error message in the terminal says the junit package doesn't exist, so I think there might be something wrong with copying the lib folder into student-submissions.
 
 ![symptom](symptom.PNG)
 ![screenshot](StudentScreenshot.PNG)
 ## TA Response
-What options can be used with the cp command to copy a directory and its contents? 
+What options can be used with the cp command to copy a directory and its contents? Try doing a quick google search to see more options for cp.
 
 ## Information Received
 ![info](info.PNG)
 ![working](working.PNG)
 
+**Note:** The student does a google search on options for cp commands and clicks on the first link (https://www.geeksforgeeks.org/cp-command-linux-examples/). Afterwards they change the bash script to include the -r option and runs the script again.
+
 The bug here was not using the -r option after the cp command to copy the lib folder into student-submissions. Since lib is a directory and not a file, using the cp command without -r would not copy the contents inside lib, which contains the junit files needed to compile TestListExamples.
 
 ## Setup Information Needed
 **file and directory structure:**
-![struc](directorystruc.PNG)
 
-**grade.sh**
+![struc](directorystruc.PNG)
+```
+git clone https://github.com/gavinlin24/grader-review-gavinlin24.git
+```
+
+**grade.sh** (before fix)
 ```
 CPATH='.;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar'
 
@@ -123,11 +129,13 @@ public class TestListExamples {
 ```
 **commands to trigger bug:**
 ```
-bash grade.sh 
+bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected.git
 ```
 **fixing the bug:**
 
 In the bash script, for the line where the student tries to copy lib into the student-submissions directory, add the -r option.
-
+```
+cp lib grading-area > cp -r lib grading-area
+```
 ## Reflection
 There were many things I learned that I didn't know before, including editing files in vim, using a debugger like jdb, and writing bash scripts to automate processes. I think overall I gained skills that are useful for saving me a lot of time in the future on programming assignments.
